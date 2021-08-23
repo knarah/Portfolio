@@ -1,0 +1,39 @@
+/* Global */
+:root {
+    /* Color */
+    --color-black: #000000;
+    --color-white: #fff3ff;
+    --color-light-white: #eeeeee;
+    --color-dark-white: #bdbdbd;
+    --color-pink: #d17bb6;
+    --color-dark-pink: #9e4c86;
+    --color-violet: #b388ff;
+    --color-light-violet: #e7b9ff;
+    --color-dark-violet: #805acb;
+    --color-grey: #cfb8ff;
+    --color-dark-grey: #4d4d4d;
+    --color-light-grey: #7c7979;
+    --color-blue: #8c9eff;
+    --color-light-blue: #c0cfff;
+    --color-dark-blue: #5870cb;
+  
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regualr: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+
+}
+
+/* Universal tags  */
+* {
+    box-sizing: border-box;
+}
