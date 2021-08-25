@@ -5,7 +5,8 @@
     --color-white: #fff3ff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #d17bb6;
+    --color-pink: #dba1c9;
+    --color-light-pink: #e9c7de;
     --color-dark-pink: #9e4c86;
     --color-violet: #b388ff;
     --color-light-violet: #e7b9ff;
@@ -63,14 +64,14 @@ h1 {
     font-family: 'Fredoka One', cursive;
     font-size: var(--font-large);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
+    color: var(--color-dark-grey);
     margin: 16px 0px;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: var(--color-black);
+    color: var(--color-dark-pink);
     margin: 8px 0px;
 }
 
@@ -84,7 +85,7 @@ h3 {
 p {
     font-size: var(--font-small);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
+    color: var(--color-dark-grey);
     margin: 4px 0px;
 }
 
@@ -146,8 +147,7 @@ p {
 #home {
     background: url('img/background.png') center/cover no-repeat;
     padding: 120px 40px 40px 40px;
-    max-width: 100%;
-    text-align: center;
+    max-width: 95%;
 }
 
 .home__avatar {
@@ -186,6 +186,10 @@ section {
 }
 
 /* About me */
+
+#about {
+    margin-top: 50px;
+}
 .about__stacks {
     display: flex;
     justify-content: space-between;
@@ -237,3 +241,78 @@ section {
     font-weight: var(--weight-semi-bold);
 
 }
+
+/* Skills */
+#skills {
+    background-color: var(--color-grey);
+    max-width: 95%;
+
+}
+
+.section__container {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.skills__title {
+    color: var(--color-white);
+    text-shadow: 1px 1px 2px var(--color-dark-grey);
+}
+
+.skillset {
+    display: flex;
+    margin: 24px 0;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    text-shadow: 1px 1px 2px var(--color-black);
+
+}
+
+.skillset__title {
+    color: var(--color-white);
+    text-shadow: 1px 1px 2px var(--color-black);
+
+}
+
+.skillset__left {
+    flex-basis: 55%;
+    background-color: var(--color-dark-pink);
+    padding: 20px 40px;
+}
+
+/* .skillset__skills {
+    margin-bottom: 16px;
+} */
+
+.skill_description {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0 4px;
+
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-light-grey);
+}
+
+.skill__value {
+    height: 3px;
+    background-color: orange;
+}
+
+.skillset__right {
+    flex-basis: 45%;
+}
+
+.etc {
+    background-color: var(--color-light-pink);
+}
+
+.etc__list {
+    margin-bottom: 0;
+    padding: 16px;
+}
+
