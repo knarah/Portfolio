@@ -13,7 +13,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-// Handling Scrolling - Navbar menu
+// Handle Scrolling - Navbar menu
 const navbarMenu = document.querySelector('.navbar__topmenu');
 
 navbarMenu.addEventListener('click', (event) => {
@@ -21,7 +21,18 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
-    const scrollTo = document.querySelector(link);
-   scrollTo.scrollIntoView({behavior: "smooth"});
+    scrollIntoView(link);
     
 });
+
+// Handle scrolling - contact me btn
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', (event) => {
+    scrollIntoView('#contact');
+});
+
+function scrollIntoView(someElement) {
+    const scrollTo = document.querySelector(someElement);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+}
+
