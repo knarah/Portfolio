@@ -94,7 +94,7 @@ p {
     margin: 4px 0px;
 }
 
-
+/* Navbar */
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -145,6 +145,15 @@ p {
 
 .navbar__menu__item:hover {
     background-color: var(--color-dark-violet);    
+}
+
+.navbar__toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 32px;
+    font-size: var(--font-regualr);
+    color: var(--color-white);
+    display: none;
 }
 
 /* Home */
@@ -385,6 +394,7 @@ section {
 
 #contact {
     color :var(--color-dark-blue);
+    max-width: 95%;
 }
 
 .contact__title {
@@ -401,6 +411,42 @@ section {
 
 .contact__github:hover,
 .contact__linkedin:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+/* For below 768px screen */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn {
+        display: block;
+    }
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__topmenu {
+        text-align: center;
+        margin: auto;
+        display: none;
+    }
     
+    .navbar__menu {
+        flex-direction: column;        
+    }
+
+    .about__stacks {
+        flex-direction: column;
+    }
+
+    .stack{
+        margin-bottom: 32px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-grow: 1;
+    }
 }
