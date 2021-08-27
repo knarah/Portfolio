@@ -5,10 +5,13 @@
     --color-white: #fff3ff;
     --color-light-white: #eeeeee;
     --color-dark-white: #bdbdbd;
-    --color-pink: #dba1c9;
-    --color-light-pink: #e9c7de;
+    /* --color-pink: #dba1c9; */
+    --color-pink: #BF9BDE;
+
+    --color-light-pink: #CEA5E1;
     --color-dark-pink: #9e4c86;
-    --color-violet: #b388ff;
+    /* --color-violet: #b388ff; */
+    --color-violet: #A288D9;
     --color-light-violet: #e7b9ff;
     --color-dark-violet: #805acb;
     --color-grey: #cfb8ff;
@@ -59,10 +62,10 @@ button {
     outline: none;
 }
 
-a, a:visited {
+/* a, a:visited {
     text-decoration: none;
     color: inherit;
-}
+} */
 
 /* Typography */
 h1 {
@@ -96,11 +99,19 @@ p {
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-violet); 
+    background-color: transparent;
     align-items: center;
     padding: 4px 24px;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-violet); 
+    transition: all 300ms ease-in-out;
+
 }
 
 .navbar__logo {
@@ -144,7 +155,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-dark-violet);    
+    background-color: var(--color-grey);    
 }
 
 .navbar__toggle-btn {
@@ -160,8 +171,8 @@ p {
 
 #home {
     background: url('img/background.png') center/cover no-repeat;
-    padding: 120px 40px 40px 40px;
-    max-width: 95%;
+    padding: 150px 40px 40px 40px;
+    max-width: 100%;
 }
 
 .home__avatar {
@@ -188,6 +199,10 @@ p {
     border: 2px solid var(--color-white);
     border-radius: var(--size-border-radius);
     box-shadow: 1px 1px 2px var(--color-dark-blue2);
+}
+
+.home__contact:hover {
+    background-color: var(--color-blue);    
 }
 
 /* Section common */
