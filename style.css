@@ -59,6 +59,11 @@ button {
     outline: none;
 }
 
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Typography */
 h1 {
     font-family: 'Fredoka One', cursive;
@@ -71,7 +76,7 @@ h1 {
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: var(--color-dark-pink);
+    color :var(--color-dark-blue);
     margin: 8px 0px;
 }
 
@@ -318,17 +323,22 @@ section {
 
 /* Work */
 
+#work {
+    padding: 100px;
+}
+
 .work__projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 24px;
 }
 
 .project {
     position: relative;
     width: 300px;
     height: 190px;
-    margin: 2px;
+    margin: 24px 8px;
     background-color: var(--color-light-white);
 }
 
@@ -364,4 +374,33 @@ section {
     color:var(--color-pink);
     font-weight: var(--weight-semi-bold);
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Contact */
+
+#contact {
+    background-color: var(--color-light-blue);
+    
+}
+
+#contact {
+    color :var(--color-dark-blue);
+}
+
+.contact__title {
+    margin: 32px 0px;
+}
+
+.contact__github,
+.contact__linkedin {
+    display: inline-flex;
+
+    font-size: var(--font-large);
+    margin: 16px;
+}
+
+.contact__github:hover,
+.contact__linkedin:hover {
+    transform: scale(1.1);
+    
 }
