@@ -22,8 +22,16 @@ navbarMenu.addEventListener('click', (event) => {
         return;
     }
     scrollIntoView(link);
+    navbarMenu.classList.remove('open');
     
 });
+
+// Navbar toggle button- show menu when small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.add('open');
+
+})
 
 // Handle scrolling - contact me btn
 const contactBtn = document.querySelector('.home__contact');
