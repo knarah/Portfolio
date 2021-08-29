@@ -424,6 +424,13 @@ section {
     margin: 16px;
 }
 
+.contact__github a:visited,
+.contact__linkedin a:visited {
+    color: inherit;
+}
+
+
+
 .contact__github:hover,
 .contact__linkedin:hover {
     transform: scale(1.1); 
@@ -453,14 +460,41 @@ section {
 
 /* For below 768px screen */
 @media screen and (max-width: 768px) {
+    :root {
+        /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regualr: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+
+    overflow-wrap: break-word;
+
+    }
+
+    .section {
+        padding: 16px;
+    }
+
+    
+    #home {
+        padding: 100px 15px 15px;
+    }
+    
     .navbar__toggle-btn {
         display: block;
+        right: 16px;
+        top:16px;
     }
     #navbar {
         flex-direction: column;
         align-items: flex-start;
         background-color: var(--color-violet); 
 
+    }
+
+    .navbar__logo {
+        line-height: 40px;
     }
 
     .navbar__topmenu {
@@ -478,19 +512,42 @@ section {
         flex-direction: column;        
     }
 
+    #about {
+        margin-top: 0;
+        padding: 24px;
+    }
+
     .about__stacks {
         flex-direction: column;
+        margin-bottom: 32px;
     }
 
     .stack{
         margin-bottom: 32px;
     }
 
+    .education__logo {
+        width: 60px;
+        height: 60px;;
+    }
+
+    #skills,
+    #work {
+        padding: 32px 24px;
+    }
     .skillset {
         flex-direction: column;
     }
 
     .project {
         flex-grow: 1;
+    }
+
+    .topbtn {
+        width: 50px;
+        height: 50px;;
+        font-size: 30px;
+        line-height: 50px;
+        right: 16px;
     }
 }
