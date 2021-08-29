@@ -7,7 +7,6 @@
     --color-dark-white: #bdbdbd;
     /* --color-pink: #dba1c9; */
     --color-pink: #BF9BDE;
-
     --color-light-pink: #CEA5E1;
     --color-dark-pink: #9e4c86;
     /* --color-violet: #b388ff; */
@@ -429,6 +428,28 @@ section {
 .contact__github:hover,
 .contact__linkedin:hover {
     transform: scale(1.1); 
+}
+
+/* Top button */
+.topbtn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    font-size: var(--font-medium);
+    background-color: var(--color-dark-violet);
+    color: var(--color-light-white);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms ease-in;
+
+}
+
+.topbtn.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* For below 768px screen */
