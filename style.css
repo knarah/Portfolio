@@ -294,8 +294,6 @@ section {
     margin: 24px 0;
     background-color: var(--color-pink);
     color: var(--color-white);
-    text-shadow: 1px 1px 2px var(--color-black);
-
 }
 
 .skillset__title {
@@ -308,6 +306,8 @@ section {
     flex-basis: 55%;
     background-color: var(--color-dark-pink);
     padding: 20px 40px;
+    text-shadow: 1px 1px 2px var(--color-black);
+
 }
 
 /* .skillset__skills {
@@ -334,6 +334,7 @@ section {
 
 .skillset__right {
     flex-basis: 45%;
+    color: var(--color-black);
 }
 
 .etc {
