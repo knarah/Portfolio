@@ -95,6 +95,10 @@ p {
     color: var(--color-dark-grey);
     margin: 4px 0px;
 }
+/* Thumnail_linkedin */
+.thumnail_linkedin {
+    display: none;
+}
 
 /* Navbar */
 #navbar {
